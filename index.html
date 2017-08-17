@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
+        <script src='main.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    
+<body>
+    <div id='map' ></div>
+    <div class='map-overlay' id='features'><h2>European Metal Bands Per Million People</h2><div id='pd'><p>Hover over a country!</p></div></div>
+    <div class='map-overlay' id='legend'></div>
+    
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoianplbyIsImEiOiJjajV4Z2JwYXAwNGt2MndxZDdsMzVic2U1In0.4ya-b1gwnvIE13ssLtxIYw';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/jzeo/cj6fp566c2qbc2tn0pmskth8o'
+    });
+    </script>
+</body>
+</html>
